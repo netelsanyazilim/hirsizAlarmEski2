@@ -1,0 +1,403 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="tr.com.netelsan.arge.hirsizalarm"
+4    android:versionCode="30"
+5    android:versionName="1.3.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="31"
+8-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:3:3-65
+11-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:3:20-62
+12
+13    <!-- Required -->
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:6:3-63
+14-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:6:20-60
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:8:3-63
+15-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:8:20-61
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:9:3-74
+16-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:9:20-71
+17
+18    <!-- Include this only if you are planning to use the camera roll -->
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:12:3-78
+19-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:12:20-75
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:13:3-79
+20-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:13:20-76
+21
+22    <!-- Include this only if you are planning to use the microphone for video recording -->
+23    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+23-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:16:3-68
+23-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:16:20-66
+24
+25    <!-- For Panic Alarm Button Usage -->
+26    <!-- Define ACCESS_FINE_LOCATION if you will use enableHighAccuracy=true -->
+27    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+27-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:20:3-76
+27-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:20:20-74
+28
+29    <!-- Define ACCESS_COARSE_LOCATION if you will use enableHighAccuracy=false -->
+30    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+30-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:23:3-78
+30-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:23:20-76
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[:react-native-community_netinfo] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\@react-native-community\netinfo\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+31-->[:react-native-community_netinfo] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\@react-native-community\netinfo\android\build\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
+32
+33    <uses-feature
+33-->[:react-native-camera] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalRelease\AndroidManifest.xml:11:5-13:36
+34        android:name="android.hardware.camera"
+34-->[:react-native-camera] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalRelease\AndroidManifest.xml:12:9-47
+35        android:required="false" />
+35-->[:react-native-camera] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalRelease\AndroidManifest.xml:13:9-33
+36    <uses-feature
+36-->[:react-native-camera] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalRelease\AndroidManifest.xml:14:5-16:36
+37        android:name="android.hardware.camera.autofocus"
+37-->[:react-native-camera] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalRelease\AndroidManifest.xml:15:9-57
+38        android:required="false" />
+38-->[:react-native-camera] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalRelease\AndroidManifest.xml:16:9-33
+39
+40    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+40-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:23:5-68
+40-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:23:22-65
+41    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+41-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:25:5-82
+41-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:25:22-79
+42    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+43    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+44    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+45    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+46    <!-- for Samsung -->
+47    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+47-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:19:5-86
+47-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:19:22-83
+48    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+48-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:20:5-87
+48-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:20:22-84
+49    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+49-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:23:5-81
+49-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:23:22-78
+50    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+50-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:24:5-83
+50-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:24:22-80
+51    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+51-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:27:5-88
+51-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:27:22-85
+52    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+52-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:28:5-92
+52-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:28:22-89
+53    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+53-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:31:5-84
+53-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:31:22-81
+54    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+54-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:34:5-83
+54-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:34:22-80
+55    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+55-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:37:5-91
+55-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:37:22-88
+56    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+56-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:38:5-92
+56-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:38:22-89
+57    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+57-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:39:5-93
+57-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:39:22-90
+58    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+58-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:42:5-73
+58-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:42:22-70
+59    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+59-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:45:5-82
+59-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:45:22-79
+60    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+60-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:46:5-83
+60-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:46:22-80
+61    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+61-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:49:5-88
+61-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:49:22-85
+62    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+62-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:50:5-89
+62-->[me.leolin:ShortcutBadger:1.1.17] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\c93df96fc3a039bcb753515e141ac87d\ShortcutBadger-1.1.17\AndroidManifest.xml:50:22-86
+63    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+63-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
+63-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+64    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+64-->[com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\1711229dd114bbcf88bb8d4b764eff64\play-services-measurement-impl-21.1.1\AndroidManifest.xml:27:5-79
+64-->[com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\1711229dd114bbcf88bb8d4b764eff64\play-services-measurement-impl-21.1.1\AndroidManifest.xml:27:22-76
+65
+66    <application
+66-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:3-49:17
+67        android:name="tr.com.netelsan.arge.hirsizalarm.MainApplication"
+67-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:52-83
+68        android:allowBackup="false"
+68-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:152-179
+69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+69-->[androidx.core:core:1.2.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\5df319b1066f236872ec93e5aba24328\core-1.2.0\AndroidManifest.xml:24:18-86
+70        android:icon="@mipmap/ic_launcher"
+70-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:117-151
+71        android:label="@string/app_name"
+71-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:84-116
+72        android:theme="@style/AppTheme"
+72-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:180-211
+73        android:usesCleartextTraffic="true" >
+73-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:25:16-51
+74        <meta-data
+74-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:27:5-135
+75            android:name="com.google.firebase.messaging.default_notification_icon"
+75-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:27:16-86
+76            android:resource="@drawable/notif_icon_shield" />
+76-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:27:87-133
+77        <meta-data
+77-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:28:5-129
+78            android:name="com.google.firebase.messaging.default_notification_channel_id"
+78-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:28:16-92
+79            android:value="my_default_channel" />
+79-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:28:93-127
+80
+81        <service
+81-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:30:5-34:15
+82            android:name="com.evollu.react.fcm.MessagingService"
+82-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:30:14-66
+83            android:enabled="true"
+83-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:30:67-89
+84            android:exported="true" >
+84-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:30:90-113
+85            <intent-filter>
+85-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:31:7-33:23
+86                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+86-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:32:9-69
+86-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:32:17-67
+87            </intent-filter>
+88        </service>
+89        <service
+89-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:36:5-40:15
+90            android:name="com.evollu.react.fcm.InstanceIdService"
+90-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:36:14-67
+91            android:exported="true" >
+91-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:36:68-91
+92            <intent-filter>
+92-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:37:7-39:23
+93                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+93-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:38:9-71
+93-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:38:17-69
+94            </intent-filter>
+95        </service>
+96
+97        <activity
+97-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:5-47:16
+98            android:name="tr.com.netelsan.arge.hirsizalarm.MainActivity"
+98-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:15-43
+99            android:configChanges="keyboardHidden|orientation|screenSize"
+99-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:145-206
+100            android:exported="true"
+100-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:247-270
+101            android:label="@string/app_name"
+101-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:44-76
+102            android:launchMode="singleTop"
+102-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:77-107
+103            android:screenOrientation="portrait"
+103-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:108-144
+104            android:windowSoftInputMode="adjustPan" >
+104-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:42:207-246
+105            <intent-filter>
+105-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:43:7-46:23
+106                <action android:name="android.intent.action.MAIN" />
+106-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:44:9-61
+106-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:44:17-58
+107
+108                <category android:name="android.intent.category.LAUNCHER" />
+108-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:45:9-69
+108-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:45:19-66
+109            </intent-filter>
+110        </activity>
+111        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+111-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:48:5-82
+111-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:48:15-79
+112
+113        <provider
+113-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-20:20
+114            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+114-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-83
+115            android:authorities="tr.com.netelsan.arge.hirsizalarm.fileprovider"
+115-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-64
+116            android:exported="false"
+116-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
+117            android:grantUriPermissions="true" >
+117-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-47
+118            <meta-data
+118-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
+119                android:name="android.support.FILE_PROVIDER_PATHS"
+119-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+120                android:resource="@xml/file_provider_paths" />
+120-->[:react-native-webview] C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
+121        </provider>
+122
+123        <receiver
+123-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:28:9-35:20
+124            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+124-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:29:13-78
+125            android:exported="true"
+125-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:30:13-36
+126            android:permission="com.google.android.c2dm.permission.SEND" >
+126-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:31:13-73
+127            <intent-filter>
+127-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:32:13-34:29
+128                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+128-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:17-81
+128-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:25-78
+129            </intent-filter>
+130        </receiver>
+131        <!--
+132             FirebaseMessagingService performs security checks at runtime,
+133             but set to not exported to explicitly avoid allowing another app to call it.
+134        -->
+135        <service
+135-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:41:9-48:19
+136            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+136-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:42:13-82
+137            android:directBootAware="true"
+137-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:43:13-43
+138            android:exported="false" >
+138-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:44:13-37
+139            <intent-filter android:priority="-500" >
+139-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:31:7-33:23
+140                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+140-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:32:9-69
+140-->C:\Users\hasan.kurt\Desktop\yedek\hirsizAlarmEski\android\app\src\main\AndroidManifest.xml:32:17-67
+141            </intent-filter>
+142        </service>
+143        <service
+143-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:49:9-55:19
+144            android:name="com.google.firebase.components.ComponentDiscoveryService"
+144-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:50:13-84
+145            android:directBootAware="true"
+145-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:35:13-43
+146            android:exported="false" >
+146-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:51:13-37
+147            <meta-data
+147-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:52:13-54:85
+148                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+148-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:53:17-119
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\8ce69ae0e554d360b107916e8344f9be\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:54:17-82
+150            <meta-data
+150-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\6cd8d5edf0863584d2b78838b16ec360\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+151                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+151-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\6cd8d5edf0863584d2b78838b16ec360\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+152                android:value="com.google.firebase.components.ComponentRegistrar" />
+152-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\6cd8d5edf0863584d2b78838b16ec360\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+153            <meta-data
+153-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\26657a3d667a8175f903eb2e043a5313\firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+154                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+154-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\26657a3d667a8175f903eb2e043a5313\firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+155                android:value="com.google.firebase.components.ComponentRegistrar" />
+155-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\26657a3d667a8175f903eb2e043a5313\firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+156            <meta-data
+156-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\5a3f50636a0a2075f4d60f6cc0feb199\play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
+157                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+157-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\5a3f50636a0a2075f4d60f6cc0feb199\play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
+158                android:value="com.google.firebase.components.ComponentRegistrar" />
+158-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\5a3f50636a0a2075f4d60f6cc0feb199\play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
+159            <meta-data
+159-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\70067e286ac0456801ab519327e817d6\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+160                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+160-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\70067e286ac0456801ab519327e817d6\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\70067e286ac0456801ab519327e817d6\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+162        </service>
+163
+164        <receiver
+164-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+165            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+165-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+167            android:exported="false" >
+167-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+168        </receiver>
+169
+170        <service
+170-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+171            android:name="com.google.android.gms.measurement.AppMeasurementService"
+171-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+172            android:enabled="true"
+172-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+173            android:exported="false" />
+173-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
+174        <service
+174-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+175            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+175-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+176            android:enabled="true"
+176-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+177            android:exported="false"
+177-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+178            android:permission="android.permission.BIND_JOB_SERVICE" />
+178-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\71596131a8802aed620cef5b84bb918e\play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
+179        <service
+179-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\943aaffdabfebb3f67efa239ba39c5a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+180            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+180-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\943aaffdabfebb3f67efa239ba39c5a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+181            android:exported="false" >
+181-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\943aaffdabfebb3f67efa239ba39c5a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+182            <meta-data
+182-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\943aaffdabfebb3f67efa239ba39c5a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+183                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+183-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\943aaffdabfebb3f67efa239ba39c5a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+184                android:value="cct" />
+184-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\943aaffdabfebb3f67efa239ba39c5a0\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+185        </service>
+186        <service
+186-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+187            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+187-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+188            android:exported="false"
+188-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+189            android:permission="android.permission.BIND_JOB_SERVICE" >
+189-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+190        </service>
+191
+192        <receiver
+192-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+193            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+193-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+194            android:exported="false" />
+194-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\82c7159e7e3e1b8c913310554a94f34b\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+195
+196        <activity
+196-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\50e6e03e25dc53ec5bf054aa80601a2f\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+197            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+197-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\50e6e03e25dc53ec5bf054aa80601a2f\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+198            android:exported="false"
+198-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\50e6e03e25dc53ec5bf054aa80601a2f\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+199            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+199-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\50e6e03e25dc53ec5bf054aa80601a2f\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+200
+201        <provider
+201-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+202            android:name="com.google.firebase.provider.FirebaseInitProvider"
+202-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+203            android:authorities="tr.com.netelsan.arge.hirsizalarm.firebaseinitprovider"
+203-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+204            android:directBootAware="true"
+204-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+205            android:exported="false"
+205-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+206            android:initOrder="100" />
+206-->[com.google.firebase:firebase-common:20.1.2] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\012a33ef2abe64c5906b218aae9cfc46\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+207
+208        <meta-data
+208-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\3228de09ae7ca26d6964624fed090cc2\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+209            android:name="com.google.android.gms.version"
+209-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\3228de09ae7ca26d6964624fed090cc2\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+210            android:value="@integer/google_play_services_version" />
+210-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hasan.kurt\.gradle\caches\transforms-2\files-2.1\3228de09ae7ca26d6964624fed090cc2\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+211    </application>
+212
+213</manifest>

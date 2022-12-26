@@ -1,0 +1,4 @@
+{
+    "team.appInsights.enabled": false,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true
+}
